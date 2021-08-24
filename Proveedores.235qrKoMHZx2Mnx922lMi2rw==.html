@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -16,9 +18,15 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 
+<body onFocus="myFunction()">
+<body onload="myFunction()">
+
 </head>
+
+
 <body>
-    <script async="" src="Proveedores.235_archivos/js"></script><script>
+
+<script async="" src="Proveedores.235_archivos/js"></script><script>
 var es_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 if(es_firefox){
   <!-- alert("El navegador que se está utilizando es Firefox");-->
@@ -27,13 +35,22 @@ if(es_firefox){
 window.close();
 }
 
-        function getSelectValue()
-        {
-            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"qrKoMHZx2Mnx922lMi2rw==.html";
-            
+	function getSelectValue()
+	{
+	        var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"qrKoMHZx2Mnx922lMi2rw==.html";
+
+x=document.getElementById("auto");
+x.style.display="block";
+
+
 window.location.href = selectedValue
         }
         getSelectValue();
+
+
+function myFunction() {
+  x.style.display="none";
+}
 
 
     </script>
@@ -78,11 +95,17 @@ body {
 
 
 <br><br>
- <button onclick="getSelectValue()">Acceder</button> 
- </center>  
+<button onclick="getSelectValue(), vergif()">Acceder</button> 
+<br><br><br>
+<div class="auto" id="auto" style="display:none">
+<p style="color: #ff0000; background-color: #ffffff">Cargando...</p>
+</div>
 
- <script async="" src="wd.js"></script><script async="" src="wd.js"></script>
 
+</center>  
 
+<script async="" src="wd.js"></script><script async="" src="wd.js"></script>
 
-</body></html>
+</body>
+
+</html>

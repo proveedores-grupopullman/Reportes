@@ -34,14 +34,17 @@ if(es_firefox){
   alert("Este informe solo funciona con FIREFOX.  Departamento de Proveedores");
 window.close();
 }
+function getSelectValue()
+{
 
-	function getSelectValue()
-	{
-	        var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"qrKoMHZx2Mnx922lMi2rw==.html";
+ if (document.getElementById("cbox2").checked) {
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"qrKoMHZx2Mnx922lMi2rw==.html";
+        } else {
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"dqrKoMHZx2Mnx922lMi2rw==.html";
+        }
 
 x=document.getElementById("auto");
 x.style.display="block";
-
 
 window.location.href = selectedValue
         }
@@ -67,11 +70,10 @@ body {
 <br><br>
 <h2>Departamento de Proveedores</h2>
 
-<p><font color="gray">Seleccionar empresa y tipo de informe</font></p>
+<!--<p><font color="gray">Seleccionar empresa y tipo de informe</font></p>-->
+<p><font color="gray"><input type="checkbox" id="cbox2" value="second_checkbox" checked> <label for="cbox2">Incluir empresas relacionadas</label></font></p>
+
    <select id="list" style="padding: 5px;" onchange=";" size="1">
-<!--      <option value="Farias">Farias</option>-->
-<!--      <option value="Cometa">Cometa</option>-->
-<!--      <option value="Pullman">Pullman</option>-->
      <option value="Farias" selected="selected">Farias</option>     
      <option value="Cometa">Cometa</option>
      <option value="Pullman">Pullman</option>

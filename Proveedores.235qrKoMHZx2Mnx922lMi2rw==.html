@@ -38,9 +38,9 @@ function getSelectValue()
 {
 
  if (document.getElementById("cbox2").checked) {
-            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"qrKoMHZx2Mnx922lMi2rw==.html";
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+"2021-09"+"qrKoMHZx2Mnx922lMi2rw==.html";
         } else {
-            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+document.getElementById("list3").value+"dqrKoMHZx2Mnx922lMi2rw==.html";
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+"2021-09"+"dqrKoMHZx2Mnx922lMi2rw==.html";
         }
 
 x=document.getElementById("auto");
@@ -71,7 +71,7 @@ body {
 <h2>Departamento de Proveedores</h2>
 
 <!--<p><font color="gray">Seleccionar empresa y tipo de informe</font></p>-->
-<p><font color="gray"><input type="checkbox" id="cbox2" value="second_checkbox" checked> <label for="cbox2">Incluir empresas relacionadas</label></font></p>
+<p><font color="gray"><input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Incluir empresas relacionadas</label></font></p>
 
    <select id="list" style="padding: 5px;" onchange=";" size="1">
      <option value="Farias" selected="selected">Farias</option>     
@@ -86,12 +86,6 @@ body {
   <select id="list2" style="padding: 5px;" onchange=";" size="1">
      <option value="Cuentas" selected="selected">Cuentas</option>
      <option value="Proveedores">Proveedores</option>
-<!--     <option value="Saldos">Saldos</option> -->
-   </select>  
-
-  <select id="list3" style="padding: 5px;" onchange=";" size="1">
-     <option value="2021-08" selected="selected">2021-08</option> 
-     <option value="2021-07">2021-07</option> 
 <!--     <option value="Saldos">Saldos</option> -->
    </select>  
 

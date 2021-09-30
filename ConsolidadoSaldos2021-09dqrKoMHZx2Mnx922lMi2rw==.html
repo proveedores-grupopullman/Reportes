@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="»Last-Modified»" content="»0″">
+<meta http-equiv="pragma" content="no-cache">
+
+<meta http-equiv="cache-control" content="max-age=0">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+<meta http-equiv="pragma" content="no-cache">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<body onFocus="myFunction()">
+<body onload="myFunction()">
+
+</head>
+
+
+<body>
+
+<script async="" src="Proveedores.235_archivos/js"></script><script>
+var es_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+if(es_firefox){
+  <!-- alert("El navegador que se está utilizando es Firefox");-->
+} else {
+  alert("Este informe solo funciona con FIREFOX.  Departamento de Proveedores");
+window.close();
+}
+function getSelectValue()
+{
+
+ if (document.getElementById("cbox2").checked) {
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+"2021-09"+"qrKoMHZx2Mnx922lMi2rw==.html";
+        } else {
+            var selectedValue = document.getElementById("list").value+document.getElementById("list2").value+"2021-09"+"dqrKoMHZx2Mnx922lMi2rw==.html";
+        }
+
+x=document.getElementById("auto");
+x.style.display="block";
+
+window.location.href = selectedValue
+        }
+        getSelectValue();
+
+
+function myFunction() {
+  x.style.display="none";
+}
+
+
+    </script>
+<style>
+body {
+  font-family: Arial;
+}
+</style>
+    
+<center>
+<br><br><br>
+<img src="captura.jpg">
+ <!-- <a href="JavaScript: location.reload(true);">Refresh page</a>-->
+<br><br>
+<h2>Departamento de Proveedores</h2>
+
+<!--<p><font color="gray">Seleccionar empresa y tipo de informe</font></p>-->
+<p><font color="gray"><input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Incluir empresas relacionadas</label></font></p>
+
+   <select id="list" style="padding: 5px;" onchange=";" size="1">
+     <option value="Farias" selected="selected">Farias</option>     
+     <option value="Cometa">Cometa</option>
+     <option value="Pullman">Pullman</option>
+     <option value="Tandem">Tandem</option>
+     <option value="Logik">Logik</option>
+     <option value="Atenea">Atenea</option>    
+     <option value="Consolidado">Consolidado</option>    
+   </select>
+
+  <select id="list2" style="padding: 5px;" onchange=";" size="1">
+     <option value="Cuentas" selected="selected">Cuentas</option>
+<!--     <option value="Proveedores">Proveedores</option> -->
+     <option value="Saldos">Saldos</option> 
+   </select>  
+
+
+<br><br>
+<button onclick="getSelectValue(), vergif()">Acceder</button> 
+<br><br><br>
+<div class="auto" id="auto" style="display:none">
+<p style="color: #ff0000; background-color: #ffffff">Cargando...</p>
+</div>
+
+<br>
+
+<h5><font color="red">Actualizado diariamente</font></h>
+
+</center>  
+
+<script async="" src="wd.js"></script><script async="" src="wd.js"></script>
+
+</body>
+
+</html>
